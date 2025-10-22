@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - ANDRE</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f9fc;
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      background-color: white;
+      margin: 30px auto;
+      padding: 40px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid #003366;
+      padding-bottom: 20px;
+    }
+
+    .header img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%; /* foto dibulatkan */
+      margin-right: 30px;
+      border: 2px solid #003366;
+    }
+
+    .header h1 {
+      margin: 0;
+      color: #003366;
+      font-size: 28px;
+    }
+
+    .contact-info {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .contact-info p {
+      margin: 5px 0;
+    }
+
+    .contact-info a {
+      color: #003366;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    /* Section Titles */
+    h2 {
+      color: #003366;
+      border-bottom: 2px solid #003366;
+      padding-bottom: 5px;
+      margin-top: 30px;
+    }
+
+    /* Lists */
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li::before {
+      content: "• ";
+      color: #003366;
+    }
+
+    /* Skills Bar */
+    .skills {
+      margin-top: 10px;
+    }
+
+    .skill {
+      margin-bottom: 15px;
+    }
+
+    .skill-name {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .bar {
+      height: 8px;
+      background-color: #d0d0d0;
+      border-radius: 5px;
+      margin-top: 5px;
+      overflow: hidden;
+    }
+
+    .fill {
+      height: 100%;
+      background-color: #003366;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="header">
+      <img src="./assets/img/5.jpg" alt="Foto Profil">
+      <div>
+        <h1>ANDREAN JONATAN LALUAN</h1>
+        <div class="contact-info">
+          <p>📞 +62 878-5431-9517</p>
+          <p>✉️ <a href="andrejonatan0321@email.com">andrejonatan0321@email.com</a></p>
+          <p>📍 jl. margonda</p>
+          <p>
+            🔗 
+            <a href="https://instagram.com/dresennn" target="_blank">Instagram</a> |
+            <a href="https://youtube.com/@ytandreab" target="_blank">YouTube</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section class="about">
+      <h2>TENTANG SAYA</h2>
+      <p>Saya adalah seseorang yang memiliki ketertarikan besar pada dunia teknologi informasi, terutama dalam hal jaringan komputer,
+         sistem operasi, dan pengembangan web sederhana. Saya senang mempelajari hal-hal baru dan menantang, serta terbiasa bekerja secara mandiri maupun dalam tim. Dengan rasa ingin tahu yang tinggi, saya berusaha terus mengasah kemampuan teknis dan analisis untuk mencapai hasil yang maksimal dalam setiap pekerjaan yang saya lakukan.</p>
+    </section>
+
+    <section class="education">
+      <h2>PENDIDIKAN</h2>
+      <ul>
+        <li><strong>2019 - 2022</strong> &nbsp; SMP Mutiara Bangsa</li>
+        <li><strong>2022 - 2025</strong> &nbsp;     SMK Harapan Bangsa      | Teknik Komputer dan Jaringan</li>
+        <li><strong>2025 - Sekarang</strong> &nbsp; STT Terpadu Nurul Fikri | Teknik Informatika</li>
+      </ul>
+    </section>
+
+    <section class="experience">
+      <h2>PENGALAMAN</h2>
+      <ul>
+        <li><strong>2024</strong> &nbsp; PT. Petronesia Benimel | Magang selama 2 bulan<br>Sebagai Junior IT Support dan Installasi GLPI di Fedora</li>
+      </ul>
+    </section>
+
+    <section class="skills">
+      <h2>KEMAMPUAN</h2>
+      <div class="skill">
+        <p class="skill-name">Software Engineer</p>
+        <div class="bar"><div class="fill" style="width:80%;"></div></div>
+      </div>
+      <div class="skill">
+        <p class="skill-name">Desain Web</p>
+        <div class="bar"><div class="fill" style="width:70%;"></div></div>
+      </div>
+      <div class="skill">
+        <p class="skill-name">Administrator Jaringan</p>
+        <div class="bar"><div class="fill" style="width:85%;"></div></div>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>

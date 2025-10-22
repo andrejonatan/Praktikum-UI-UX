@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Saya</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      background: #fff;
+      padding: 25px 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: #0078d7;
+      margin-bottom: 25px;
+    }
+
+    .video-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .video-box {
+      position: relative;
+      width: 380px;
+      padding-bottom: 56.25%; /* Rasio 16:9 */
+      height: 0;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      background: #000;
+    }
+
+    .video-box iframe,
+    .video-box video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    /* Tombol kembali */
+    .back-btn {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      background-color: #0078d7;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      background-color: #005fa3;
+    }
+
+    @media (max-width: 600px) {
+      body { margin: 20px; }
+      .video-box { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Video Saya</h1>
+
+    <div class="video-grid">
+      <!-- Video dari file lokal -->
+      <div class="video-box">
+        <video controls>
+          <source src="./assets/vid/vid2.mp4" type="video/mp4">
+          Browser kamu tidak mendukung video HTML5.
+        </video>
+      </div>
+
+      <!-- Video kedua -->
+      <div class="video-box">
+        <video controls>
+          <source src="./assets/vid/vid3.mp4" type="video/mp4">
+          Browser kamu tidak mendukung video HTML5.
+        </video>
+      </div>
+
+     <!-- Video ketiga -->
+      <div class="video-box">
+        <video controls>
+          <source src="./assets/vid/vid4.mp4" type="video/mp4">
+          Browser kamu tidak mendukung video HTML5.
+        </video>
+      </div>
+
+     <!-- Video keempat -->
+      <div class="video-box">
+        <video controls>
+          <source src="./assets/vid/vid5.mp4" type="video/mp4">
+          Browser kamu tidak mendukung video HTML5.
+        </video>
+      </div>
+
+
+    <div style="text-align: center;">
+      <a href="index.html" class="back-btn">⬅ Kembali ke Profil</a>
+    </div>
+  </div>
+</body>
+</html>

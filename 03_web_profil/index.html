@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Andrean Jonatan Laluan</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f7f7f7;
+    }
+
+    .container {
+      background: #fff;
+      padding: 20px 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 800px;
+      margin: auto;
+    }
+
+    /* === Header === */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .profile-info {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .profile-info img {
+      width: 120px;
+      height: 120px;
+      border: 3px solid #ccc;
+      border-radius: 50%; /* jadi lingkaran */
+      object-fit: cover;
+    }
+
+    .details h2 {
+      margin: 0;
+    }
+
+    .details p {
+      line-height: 1.5;
+    }
+
+    /* === Categories === */
+    .categories {
+      text-align: right;
+      min-width: 150px;
+    }
+
+    .categories h3 {
+      margin-top: 0;
+      font-size: 1.1em;
+    }
+
+    .categories a {
+      display: block;
+      text-decoration: none;
+      color: white;
+      background-color: #0078d7;
+      padding: 8px 12px;
+      margin: 6px 0;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    .categories a:hover {
+      background-color: #005fa3;
+    }
+
+    /* === Description === */
+    .description {
+      margin-top: 20px;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    /* === Media Section === */
+    .media-section {
+      margin-top: 30px;
+    }
+
+    .media-section h3 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+
+    /* Video */
+    .video-container {
+      margin-top: 15px;
+    }
+
+    .video-container iframe,
+    .video-container video {
+      width: 100%;
+      max-width: 600px;
+      height: 320px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+
+    .video-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .video-container {
+      position: relative;
+      width: 400px;
+      padding-bottom: 75%; /* rasio 4:3 */
+      height: 0;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .video-container video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+
+    /* Gallery */
+    .photo-gallery {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+
+    .photo-gallery img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+
+    /* Social Links */
+    .social-links {
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .social-links a {
+      display: inline-flex;
+      margin-right: 15px;
+      gap: 8px;
+      align-items: center;
+      text-decoration: none;
+      color: #fff;
+      background: #333;
+      padding: 10px 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .social-links a:hover {
+      opacity: 0.8;
+    }
+
+    .social-links .instagram {
+      background: #b1036b;
+    }
+
+    .social-links .youtube {
+      background: #ff0000;
+    }
+
+    .social-links .github {
+    background: #000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    }
+
+  .social-links .github img {
+    width: 10px;
+    height: 10px;
+  }
+
+  .social-links .github:hover {
+    background: #ffffff; /* efek hover opsional */
+  }
+  
+
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .categories {
+        text-align: center;
+      }
+
+      .photo-gallery {
+        justify-content: center;
+      }
+
+      .social-links {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <div class="header">
+      <div class="profile-info">
+        <img src="./assets/img/5.jpg" alt="Profile Picture">
+        <div class="details">
+          <h2>ANDREAN JONATAN LALUAN</h2>
+          <p>
+            Email: <a href="andrejonatan0321@gmail.com">andrejonatan0321@gmail.com</a><br>
+            Telephone: 0878-5431-9517
+          </p>
+        </div>
+      </div>
+
+      <div class="categories">
+        <h3>Cek Ini Juga</h3>
+        <a href="cv.html">CV Saya</a>
+        <a href="page-1.html">Praktikum Form</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="video.html">Video Saya</a>
+      </div>
+    </div>
+
+    <!-- Description -->
+    <div class="description">
+      <p>Selamat datang di halaman profil saya! Di sini saya membagikan informasi singkat tentang diri saya, proyek yang pernah saya kerjakan, serta beberapa foto dan video saya.
+      <p>Halo! Saya adalah seorang pelajar SMK jurusan Teknik Komputer dan Jaringan yang memiliki minat besar di bidang jaringan, server, dan sistem operasi Linux. Saya suka mempelajari hal baru dan sering bereksperimen dengan teknologi open source seperti FreeIPA, Ansible, dan Podman.
+        Tujuan saya adalah menjadi administrator jaringan yang andal dan terus berkembang mengikuti kemajuan teknologi.</p>
+    </div>
+
+    <!-- Media Section -->
+    <div class="media-section">
+      <h3>Media</h3>
+
+      <div class="video-wrapper">
+
+  <div class="video-container">
+    <video controls>
+      <source src="./assets/vid/vid2.mp4" type="video/mp4" style="border-radius:10px ; box-shadow: 0 0 10px #000000;">
+      Browser kamu tidak mendukung video HTML5.
+    </video>
+  </div>
+      <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xmkmI9_nGZA?si=MrysEclpzSWbEf3g" 
+        style="border-radius: 10px; box-shadow:0 0 10px #000000;" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+        picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+      </div>
+
+</div>
+    </div>
+      <!-- Photo Gallery -->
+      <div class="photo-gallery">
+        <img src="./assets/img/1.jpg" alt="Photo 1">
+        <img src="./assets/img/2.jpg" alt="Photo 2">
+        <img src="./assets/img/3.jpg" alt="Photo 3">
+        <img src="./assets/img/4.jpg" alt="Photo 4">
+        <img src="./assets/img/6.jpg" alt="Photo 5">
+        <img src="./assets/img/7.jpg" alt="Photo 6">
+      </div>
+
+  <aside>
+    <br>
+    <fieldset>
+      <legend>Download Foto</legend>
+      <a href="./assets/img/1.jpg" download="fotoandre1.jpg">foto-1</a>
+      <a href="./assets/img/2.jpg" download="fotoandre2.jpg">foto-2</a>
+      <a href="./assets/img/3.jpg" download="fotoandre3.jpg">foto-3</a>
+      <a href="./assets/img/4.jpg" download="fotoandre4.jpg">foto-4</a>
+      <a href="./assets/img/6.jpg" download="fotoandre6.jpg">foto-5</a>
+      <a href="./assets/img/7.jpg" download="fotoandre7.jpg">foto-6</a>
+    </fieldset>
+  </aside>
+
+      <!-- Social Links -->
+      <div class="social-links">
+        <a href="https://www.instagram.com/dresennn/n" class="instagram" target="https://www.instagram.com/dresennn/">Instagram</a>
+        <a href="https://youtube.com/@ytandrean" class="youtube" target="https//www.youtube.com/@ytandrean">YouTube</a>
+        <a href="https://github.com/andrejonatan" class="github" target="https://github.com/andrejonatan">Github
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Github">
+        
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
