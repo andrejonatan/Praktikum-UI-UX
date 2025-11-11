@@ -8,3 +8,4 @@ Rombel: TI07
 - [tugas_praktikum_3_profil](https://github.com/andrejonatan/Praktikum-UI-UX/tree/main//03_web_profil) - [Klik ini](https://andrejonatan.github.io/Praktikum-UI-UX/03_web_profil/index.html)
 - [tugas_praktikum_4_css](https://github.com/andrejonatan/Praktikum-UI-UX/tree/main//04_praktikum_css) - [Klik ini](https://andrejonatan.github.io/Praktikum-UI-UX/04_praktikum_css/index.html)
 - [tugas_praktikum_5_box](https://github.com/andrejonatan/Praktikum-UI-UX/tree/main//05_praktikum_box) - [Klik ini](https://andrejonatan.github.io/Praktikum-UI-UX/05_praktikum_box/index.html)
+- [tugas_praktikum_5_box](https://github.com/andrejonatan/Praktikum-UI-UX/tree/main//06_praktikum_box) - [Klik ini](https://andrejonatan.github.io/Praktikum-UI-UX/06_praktikum_box/index.html)
