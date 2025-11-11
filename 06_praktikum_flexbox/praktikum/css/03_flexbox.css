@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 2em;
+  font-family: sans-serif;
+  background: linear-gradient(to right, #5293cc, #165584);
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 1em;
+  color: navy;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 2em;
+  flex-wrap: wrap;
+}
+
+
+.row img {
+  flex: 1 1 200px;              /* fleksibel tapi tetap ukuran dasar 200px */
+  height: 150px;                /* tinggi tetap */
+  object-fit: cover;            /* potong gambar biar proporsional */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+
+.row img:hover {
+  transform: scale(1.05);
+}
+
+.row-3 {
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 2em;
+}

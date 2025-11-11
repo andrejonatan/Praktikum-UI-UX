@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+.layout-a {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header, footer {
+  background-color: yellow;
+  text-align: center;
+  padding: 1em;
+  font-weight: bold;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+}
+
+nav {
+  background-color: pink;
+  width: 20%;
+  padding: 1em;
+  text-align: center;
+}
+
+article {
+  background-color: white;
+  flex: 1;
+  padding: 1em;
+  text-align: center;
+}
+
+aside {
+  background-color: cyan;
+  width: 20%;
+  padding: 1em;
+  text-align: center;
+}

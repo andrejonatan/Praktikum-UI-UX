@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header, footer {
+  background-color: yellow;
+  padding: 1em;
+  text-align: center;
+  font-weight: bold;
+  min-width: 20%;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  height: calc(100vh - 120px); /* sisa tinggi setelah header & footer */
+}
+
+
+article {
+  background-color: white;
+  flex: 1;
+  padding: 1em;
+  flex-basis: 60%;
+}
+
+aside {
+  background-color: pink;
+  flex: 1;
+  padding: 1em;
+  flex-basis: 20%;
+}
+
+nav {
+  background-color: teal;
+  color: white;
+  flex: 1;
+  padding: 1em;
+  flex-basis: 20%;
+}
+
+footer {
+  background-color: yellow;
+  padding: 1em;
+  text-align: center;
+}
