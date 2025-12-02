@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andre - JavaScript</title>
+    <h2>Hitung Penjumlahan</h2>
+    <h4>Masukkan dua angka yang akan dijumlahkan:</h4>
+    <label for="angka1">Angka 1:</label>
+    <input type="number" id="angka1" value="0">
+    <br>
+    <label for="angka2">Angka 2:</label>
+    <input type="number" id="angka2" value="0">
+    <button onclick="hitung_jumlah()">Hitung</button>
+</head>
+<body>
+    <h3>Hasil:</h3>
+    <p id="output"></p>
+
+    <script>
+        function hitung_jumlah() {
+            const angka1 = parseFloat(document.getElementById("angka1").value) || 0;
+            const angka2 = parseFloat(document.getElementById("angka2").value) || 0;
+            const jumlah = angka1 + angka2;
+            document.getElementById("output").innerHTML = "Hasil Penjumlahan = " + jumlah;
+        }
+    </script>
+</body>
+</html>
