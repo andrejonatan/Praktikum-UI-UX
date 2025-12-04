@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar JavaScript</title>
+    <script>
+        let jagoan1 = {
+            nama : "Goku",
+            power : 9000,
+            makan : function(porsi) {
+                console.log(this.nama + " sedang makan " + porsi + " porsi");
+                this.power = this.power + (porsi * 100);
+            },
+            pukul : function(lawan) {
+                console.log(this.nama + " sedang memukul " + lawan.nama + 
+                " dengan power " + this.power);
+                this.power = this.power - 500;
+                lawan.power = lawan.power - 500;
+        }}
+
+                let jagoan2 = {
+            nama : "okaru",
+            power : 9000,
+            makan : function(porsi) {
+                console.log(this.nama + " sedang makan " + porsi + " porsi");
+                this.power = this.power + (porsi * 100);
+            },
+            pukul : function(lawan) {
+                console.log(this.nama + " sedang memukul " + lawan.nama + 
+                " dengan power " + this.power);
+                this.power = this.power - 500;
+                lawan.power = lawan.power - 500;
+        }}
+
+    console.log("Power awal " + jagoan1.nama + " adalah " + jagoan1.power);
+        console.log("Power awal " + jagoan2.nama + " adalah " + jagoan2.power);
+        jagoan1.makan(5);
+        jagoan2.makan(3);
+        console.log("Power setelah makan " + jagoan1.nama + " adalah " + jagoan1.power);
+        console.log("Power setelah makan " + jagoan2.nama + " adalah " + jagoan2.power);
+        jagoan2.pukul(jagoan1);
+        console.log("Power setelah dipukul " + jagoan1.nama + " adalah " + jagoan1.power);
+        console.log("Power setelah memukul " + jagoan2.nama + " adalah " + jagoan2.power);
+        jagoan1.pukul(jagoan2);
+        console.log("Power setelah dipukul " + jagoan2.nama + " adalah " + jagoan2.power);
+        console.log("Power setelah memukul " + jagoan1.nama + " adalah " + jagoan1.power);
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    <h1 style="color: maroon; text-align: center;"><b>CEK SCRIPT DI CONSOLE</b></h1>
+</body>
+</html>

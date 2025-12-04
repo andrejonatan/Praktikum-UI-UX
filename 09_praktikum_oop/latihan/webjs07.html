@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web JS - Andrean</title>
+    <script>
+        let buahs = ["Apel", "Mangga", "Pisang"];
+        buahs.push("Jeruk");
+        console.log("buah index ke-1 adalah " + buahs[1]);
+        for(let i = 0; i < buahs.length; i++) {
+           console.log("buah index ke-" + i + " adalah " + buahs[i]);
+        }
+        function isidata() {
+            const buah = document.getElementById("buah");
+            // clear existing options first (prevents duplicates or leftover placeholder)
+            buah.innerHTML = '';
+            for(let i = 0; i < buahs.length; i++) {
+                const optionbaru = document.createElement("option");
+                optionbaru.value = buahs[i];
+                optionbaru.text = buahs[i];
+                buah.add(optionbaru);
+            }
+        }
+
+        function pilih() {
+            let buah = document.getElementById("buah");
+            let pilihan = buah.options[buah.selectedIndex].value;
+            alert("Anda memilih " + pilihan);
+            console.log("Anda memilih " + pilihan);
+        }
+    </script>
+</head>
+<body onload="isidata()">
+    <form>
+        Pilih buah favorit anda:
+        <select id="buah" onchange="pilih()"></select>
+    </form>
+</body>
+</html>
