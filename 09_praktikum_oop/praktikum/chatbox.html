@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbox</title>
+
+
+    <style>
+        .chatbox {
+            width: 280px;
+            height: 350px;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            border: 1px solid #ccc;
+            background: white;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #chatDisplay {
+            flex: 1;
+            padding: 10px;
+            overflow-y: scroll;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #inputArea {
+            display: flex;
+            padding: 5px;
+        }
+
+        #msg {
+            flex: 1;
+            padding: 5px;
+        }
+
+        button {
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>Tulis Pesan di Pojok Bawah Kanan</h1>
+<div class="chatbox">
+    <div id="chatDisplay"></div>
+
+    <div id="inputArea">
+        <input type="text" id="msg" placeholder="Tulis pesan..." />
+        <button onclick="kirim()">Kirim</button>
+    </div>
+</div>
+
+<script>
+    function kirim() {
+        const pesan = document.getElementById("msg").value;
+        if (pesan.trim() === "") return;
+
+        const box = document.getElementById("chatDisplay");
+        const p = document.createElement("p");
+        p.innerText = pesan;
+        box.appendChild(p);
+
+        box.scrollTop = box.scrollHeight; // auto scroll
+
+        document.getElementById("msg").value = "";
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validasi</title>
+</head>
+<body>
+    <form>
+        <label for="name">Nama: </label>
+        <input type="text" id="name" placeholder="Masukkan Nama Anda:"><span id="errorName"></span>
+
+        <br>
+
+        <label for="email">Email: </label>
+        <input type="email" id="email" placeholder="Masukkan Email Anda:"><span id="errorEmail"></span>
+
+        <br>
+
+        <label for="jam">Jam Keberangkatan:</label>
+        <input type="time" id="jam" placeholder="Masukkan Jam Keberangkatan Anda:"> <span id="errorJam"></span>
+        
+        <br>
+
+        <label for="tujuan">Tujuan:</label>
+        <input type="text" id="tujuan" placeholder="Masukkan Tujuan  Anda:"><span id="errorTujuan"></span>
+
+        <br>
+
+        <label for="tiket">Tiket:</label>
+        <input type="text" id="tiket" placeholder="Masukkan Tiket Anda:"><span id="errorTiket"></span>
+
+        <br>
+
+        <input type="button" value="submit" onclick="formValidation()">
+    </form>
+
+    <div>
+        <h1 id="hasil"></h1>
+        <p id="hasilName"></p>
+        <p id="hasilEmail"></p>
+        <p id="hasilJam"></p>
+        <p id="hasilTujuan"></p>
+        <p id="hasilTiket"></p>
+    </div>
+</body>
+    <script>
+        function formValidation() {
+            // read inputs
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const jam = document.getElementById("jam").value.trim();
+            const tujuan = document.getElementById("tujuan").value.trim();
+            const tiket = document.getElementById("tiket").value.trim();
+
+            // clear previous errors
+            document.getElementById("errorName").textContent = '';
+            document.getElementById("errorEmail").textContent = '';
+            document.getElementById("errorJam").textContent = '';
+            document.getElementById("errorTujuan").textContent = '';
+            document.getElementById("errorTiket").textContent = '';
+
+            // required field checks
+            if (!name) {
+                document.getElementById("errorName").textContent = 'Nama harus diisi';
+                document.getElementById("errorName").style.color = 'red';
+                return false;
+            }
+            if (!email) {
+                document.getElementById("errorEmail").textContent = 'Email harus diisi';
+                document.getElementById("errorEmail").style.color = 'red';
+                return false;
+            }
+            if (!jam) {
+                document.getElementById("errorJam").textContent = 'Jam harus diisi';
+                document.getElementById("errorJam").style.color = 'red';
+                return false;
+            }
+            if (!tujuan) {
+                document.getElementById("errorTujuan").textContent = 'Tujuan harus diisi';
+                document.getElementById("errorTujuan").style.color = 'red';
+                return false;
+            }
+            if (!tiket) {
+                document.getElementById("errorTiket").textContent = 'Tiket harus diisi';
+                document.getElementById("errorTiket").style.color = 'red';
+                return false;
+            }
+
+            // show submitted data
+            document.getElementById("hasil").textContent = 'Data yang anda masukkan adalah:';
+            document.getElementById("hasilName").textContent = 'Nama: ' + name;
+            document.getElementById("hasilEmail").textContent = 'Email: ' + email;
+            document.getElementById("hasilJam").textContent = 'Jam Keberangkatan: ' + jam;
+            document.getElementById("hasilTujuan").textContent = 'Tujuan: ' + tujuan;
+            document.getElementById("hasilTiket").textContent = 'Tiket: ' + tiket;
+
+            // specific record matching (example)
+            if (name.toLowerCase() === 'hanna' && email === 'kyuu@gmail.com' && jam === '06:00' && tujuan.toLowerCase() === 'kalimantan' && tiket === '3') {
+                // everything matches
+                alert('Form berhasil disubmit');
+                return true;
+            } else {
+                // show not found messages for mismatches
+                if (name.toLowerCase() !== 'hanna' || email !== 'kyuu@gmail.com') {
+                    document.getElementById("errorName").textContent = 'DATA TIDAK DITEMUKAN';
+                    document.getElementById("errorName").style.color = 'red';
+                    document.getElementById("errorEmail").textContent = 'DATA TIDAK DITEMUKAN';
+                    document.getElementById("errorEmail").style.color = 'red';
+                }
+                if (jam !== '06:00') {
+                    document.getElementById("errorJam").textContent = 'DATA TIDAK DITEMUKAN';
+                    document.getElementById("errorJam").style.color = 'red';
+                }
+                if (tujuan.toLowerCase() !== 'kalimantan' || tiket !== '3') {
+                    document.getElementById("errorTujuan").textContent = 'DATA TIDAK DITEMUKAN';
+                    document.getElementById("errorTujuan").style.color = 'red';
+                    document.getElementById("errorTiket").textContent = 'DATA TIDAK DITEMUKAN';
+                    document.getElementById("errorTiket").style.color = 'red';
+                }
+                return false;
+            }
+        }
+
+        function reload() {
+            window.location.reload();
+        }
+    </script>
+</html>

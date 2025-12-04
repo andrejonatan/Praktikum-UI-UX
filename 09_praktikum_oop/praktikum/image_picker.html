@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Picker</title>
+    <style>
+        /* Rounded preview image */
+        #preview {
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            transition: transform 120ms ease-in-out;
+        }
+        #preview:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+
+<h2>Pilih Gambar</h2>
+
+<select id="gambarSelect" onchange="tampilGambar()">
+    <option value="">-- Pilih gambar --</option>
+    <option value="img/doraemon.webp">doraemon</option>
+    <option value="img/nobita.webp">nobita</option>
+    <option value="img/shizuka.webp">shizuka</option>
+    <option value="img/giant.webp">giant</option>
+    <option value="img/suneo.webp">suneo</option>
+</select>
+
+<br><br>
+
+<img id="preview" src="" width="300" style="display:none; border:1px solid black;">
+
+<script>
+function tampilGambar() {
+    const select = document.getElementById("gambarSelect");
+    const file = select.value;
+
+    const img = document.getElementById("preview");
+    if (file === "") {
+        img.style.display = "none";
+        img.src = "";
+        return;
+    }
+
+    console.log("Memuat gambar:", file);
+    // option values already contain the correct relative path (e.g. "img/doraemon.webp")
+    img.src = file;
+    img.alt = select.options[select.selectedIndex].text;
+    img.style.display = "block";
+}
+</script>
+
+</body>
+</html>
