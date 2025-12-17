@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pembuatan Event</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        body { background-color: #76a4fa; }
+        .form-wrapper {
+            max-width: 720px;
+            margin: 0 auto; /* center horizontally */
+            padding: 24px;  /* inner spacing */
+            border-radius: 12px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            overflow: hidden; /* prevent children from overflowing */
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+      <div class="form-wrapper">
+                <h1 class="text-center mb-4">Form Untuk Pembuatan Event</h1>
+        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+        <div class="form-floating mb-3">
+            <input class="form-control" id="kode" type="text" placeholder="Kode" data-sb-validations="required" />
+            <label for="kode">Kode</label>
+            <div class="invalid-feedback" data-sb-feedback="kode:required">Kode is required.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="namaKegiatan" type="text" placeholder="Nama Kegiatan" data-sb-validations="required" />
+            <label for="namaKegiatan">Nama Kegiatan</label>
+            <div class="invalid-feedback" data-sb-feedback="namaKegiatan:required">Nama Kegiatan is required.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="tanggalMulai" type="date" placeholder="Tanggal Mulai" data-sb-validations="required" />
+            <label for="tanggalMulai">Tanggal Mulai</label>
+            <div class="invalid-feedback" data-sb-feedback="tanggalMulai:required">Tanggal Mulai is required.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="tanggalAkhir" type="date" placeholder="Tanggal Akhir" data-sb-validations="required" />
+            <label for="tanggalAkhir">Tanggal Akhir</label>
+            <div class="invalid-feedback" data-sb-feedback="tanggalAkhir:required">Tanggal Akhir is required.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="biaya" type="text" placeholder="Biaya " data-sb-validations="required" />
+            <label for="biaya">Biaya </label>
+            <div class="invalid-feedback" data-sb-feedback="biaya:required">Biaya is required.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="tempat" type="text" placeholder="Tempat" data-sb-validations="required" />
+            <label for="tempat">Tempat</label>
+            <div class="invalid-feedback" data-sb-feedback="tempat:required">Tempat is required.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="latitude" type="text" placeholder="Latitude" data-sb-validations="required" />
+            <label for="latitude">Latitude</label>
+            <div class="invalid-feedback" data-sb-feedback="latitude:required">Latitude is required.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="longitude" type="text" placeholder="Longitude" data-sb-validations="required" />
+            <label for="longitude">Longitude</label>
+            <div class="invalid-feedback" data-sb-feedback="longitude:required">Longitude is required.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <select class="form-select" id="jenisKegiatan" aria-label="Jenis Kegiatan">
+                <option value="Offline">Offline</option>
+                <option value="Online">Online</option>
+                <option value="Hybrid">Hybrid</option>
+            </select>
+            <label for="jenisKegiatan">Jenis Kegiatan</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="pic" type="text" placeholder="PIC" data-sb-validations="required" />
+            <label for="pic">PIC</label>
+            <div class="invalid-feedback" data-sb-feedback="pic:required">PIC is required.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <textarea class="form-control" id="deskripsi" type="text" placeholder="Deskripsi" style="height: 10rem;" data-sb-validations="required"></textarea>
+            <label for="deskripsi">Deskripsi</label>
+            <div class="invalid-feedback" data-sb-feedback="deskripsi:required">Deskripsi is required.</div>
+        </div>
+        <div class="d-none" id="submitSuccessMessage">
+            <div class="text-center mb-3">
+                <div class="fw-bolder">Form submission successful!</div>
+                <p>To activate this form, sign up at</p>
+                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+            </div>
+        </div>
+        <div class="d-none" id="submitErrorMessage">
+            <div class="text-center text-danger mb-3">Error sending message!</div>
+        </div>
+        <div class="d-grid">
+            <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Simpan</button>
+        </div>
+        </form>
+      </div>
+    </div>
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+</html>

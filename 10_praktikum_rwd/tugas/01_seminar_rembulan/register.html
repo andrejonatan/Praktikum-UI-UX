@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Registrasi Seminar / Workshop</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="background-color: rgb(30, 73, 87);">
+<div class="container mt-5" style="background-color: rgb(255, 255, 255); border-radius: 15px; padding: 20px; margin: 20px auto;">
+  <h1 class="text-center mb-4">Form Registrasi Seminar/Workshop</h1>
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <form>
+        <div class="form-group row">
+          <label for="nama" class="col-4 col-form-label">Nama Lengkap</label>
+          <div class="col-8">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="fa fa-address-card"></i>
+                </div>
+              </div>
+              <input id="nama" name="nama" placeholder="Masukkan nama lengkap anda" type="text" class="form-control">
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="tempatLahir" class="col-4 col-form-label">Tempat Lahir</label>
+          <div class="col-8">
+            <input id="tempatLahir" name="tempatLahir" placeholder="Masukkan tempat lahir anda" type="text" class="form-control">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="tanggalLahir" class="col-4 col-form-label">Tanggal Lahir</label>
+          <div class="col-8">
+            <input id="tanggalLahir" name="tanggalLahir" placeholder="Masukkan tanggal lahir anda" type="date" class="form-control">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-4">Gender</label>
+          <div class="col-8">
+            <div class="custom-control custom-radio custom-control-inline">
+              <input name="gender" id="gender_0" type="radio" class="custom-control-input" value="lakiLaki">
+              <label for="gender_0" class="custom-control-label">Laki-laki</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input name="gender" id="gender_1" type="radio" class="custom-control-input" value="perempuan">
+              <label for="gender_1" class="custom-control-label">Perempuan</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input name="gender" id="gender_2" type="radio" class="custom-control-input" value="none">
+              <label for="gender_2" class="custom-control-label">Tidak ingin memberi tahu</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="email" class="col-4 col-form-label">Email</label>
+          <div class="col-8">
+            <input id="email" name="email" placeholder="Masukkan email anda" type="text" class="form-control">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="statusPeserta" class="col-4 col-form-label">Status Peserta</label>
+          <div class="col-8">
+            <select id="statusPeserta" name="statusPeserta" class="custom-select">
+              <option value="umum">Umum</option>
+              <option value="mahasiswa">Mahasiswa</option>
+              <option value="pelajar">Pelajar</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="offset-4 col-8">
+            <button name="submit" type="submit" class="btn btn-primary">Daftar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>

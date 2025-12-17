@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peserta Kegiatan Seminar</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 15px;
+    }
+    .breadcrumb {
+      font-size: 14px;
+      margin-bottom: 15px;
+      color: #555;
+    }
+    .box {
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+    }
+    .box-header {
+      background: #eee;
+      padding: 8px 12px;
+      font-weight: bold;
+    }
+    .box-body {
+      padding: 12px;
+    }
+    .filters {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      align-items: end;
+    }
+    label {
+      font-size: 13px;
+      display: block;
+      margin-bottom: 5px;
+    }
+    input, select {
+      width: 100%;
+      padding: 6px;
+      box-sizing: border-box;
+    }
+    .table-tools {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    table th, table td {
+      border: 1px solid #999;
+      padding: 6px;
+      text-align: center;
+    }
+    table th {
+      background: #bbb;
+    }
+    .action-btn {
+      cursor: pointer;
+      margin: 0 3px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="breadcrumb">
+      Kegiatan &gt; Peserta Kegiatan Seminar Rembulan
+    </div>
+
+    <div class="box">
+      <div class="box-header">Filters</div>
+      <div class="box-body">
+        <div class="filters">
+          <div>
+            <label>Tanggal Daftar</label>
+            <input type="date" />
+            <input type="date" style="margin-top:5px" />
+          </div>
+          <div>
+            <label>Kategori Peserta</label>
+            <select>
+              <option>Mahasiswa</option>
+              <option>Umum</option>
+            </select>
+          </div>
+          <div>
+            <label>Status Peserta</label>
+            <select>
+              <option>Booking</option>
+              <option>Hadir</option>
+              <option>Batal</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="box-header">Data Peserta Seminar</div>
+      <div class="box-body">
+        <div class="table-tools">
+          <input type="text" placeholder="Search" />
+          <button>Download</button>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Nomor</th>
+              <th>Nama Lengkap</th>
+              <th>Tempat Lahir</th>
+              <th>Tanggal Lahir</th>
+              <th>Gender</th>
+              <th>Email</th>
+              <th>Kategori</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>5001</td>
+              <td>Budi Anto</td>
+              <td>Depok</td>
+              <td>2000-10-01</td>
+              <td>Laki-laki</td>
+              <td>budianto@gmail.com</td>
+              <td>Mahasiswa</td>
+              <td>Booking</td>
+              <td>
+                <span class="action-btn">👁</span>
+                <span class="action-btn">✏</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
