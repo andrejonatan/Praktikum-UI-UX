@@ -12,4 +12,4 @@ Rombel: TI07
 - [tugas_praktikum_7_figma](https://github.com/andrejonatan/Praktikum-UI-UX/tree/main//07_praktikum_figma/preview.png) - [Link Figma](https://www.figma.com/site/JubgcMeQfxMkIHKtF6Y7Ve/praktikum-ui_ux?node-id=0-1&t=Vl9ZqSFfitmkIrHi-1)
 - [tugas_praktikum_8_javascript](https://github.com/andrejonatan/Praktikum-UI-UX/tree/main//08_praktikum_javascript) - [Klik ini](https://andrean.my.id/Praktikum-UI-UX/08_praktikum_javascript/index.html)
 - [tugas_praktikum_9_oop](https://github.com/andrejonatan/Praktikum-UI-UX/tree/main//09_praktikum_oop) - [Klik ini](https://andrean.my.id/Praktikum-UI-UX/09_praktikum_oop/index.html)
-[tugas_praktikum_10_rwd](https://github.com/andrejonatan/Praktikum-UI-UX/tree/main//10_praktikum_rwd) - [Klik ini](https://andrean.my.id/Praktikum-UI-UX/10_praktikum_rwd/index.html)
+- [tugas_praktikum_10_rwd](https://github.com/andrejonatan/Praktikum-UI-UX/tree/main//10_praktikum_rwd) - [Klik ini](https://andrean.my.id/Praktikum-UI-UX/10_praktikum_rwd/index.html)
